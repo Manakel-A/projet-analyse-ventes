@@ -1,0 +1,9 @@
+PHarmaciepackage\FormTableaudebord.class
+PHarmaciepackage\FormConnexion.class
+com\mycompany\javapharmacie\JavaPharmacie.class
+PHarmaciepackage\ConnexionBD.class
+PHarmaciepackage\FormAlertes.class
+PHarmaciepackage\FormVente.class
+PHarmaciepackage\FormPharmacien.class
+PHarmaciepackage\FormMedicament.class
+PHarmaciepackage\FormNouvelleVente.class
