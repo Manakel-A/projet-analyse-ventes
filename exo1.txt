@@ -1,3 +1,0 @@
-E001 ALI Aya F 18 19,6
-E002 DARL Manioc M 34 14,0
-E003 DOIT Mensah M 26 15,5
