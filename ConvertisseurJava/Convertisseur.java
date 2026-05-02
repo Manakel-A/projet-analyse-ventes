@@ -18,7 +18,17 @@ public class Convertisseur {
         if (choix == 1) {
 
             System.out.print("Entre le montant en FCFA : ");
-            double fcfa = scanner.nextDouble();
+            double fcfa;
+
+            while (true) {
+                fcfa = scanner.nextDouble();
+            
+                if (fcfa >= 0) {
+                    break;
+                } else {
+                    System.out.print("⚠️ Le montant doit être positif. Réessaie : ");
+                }
+            }
 
             double euro = fcfa / 655.957;
 
@@ -27,7 +37,17 @@ public class Convertisseur {
         } else if (choix == 2) {
 
             System.out.print("Entre le montant en Euro : ");
-            double euro = scanner.nextDouble();
+            double euro;
+
+            while (true) {
+                euro = scanner.nextDouble();
+            
+                if (euro >= 0) {
+                    break;
+                } else {
+                    System.out.print("⚠️ Le montant doit être positif. Réessaie : ");
+                }
+            }
 
             double fcfa = euro * 655.957;
 
