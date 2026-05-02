@@ -6,38 +6,46 @@ public class Convertisseur {
 
         Scanner scanner = new Scanner(System.in);
         int choix;
+        char continuer;
 
         System.out.println("=== CONVERTISSEUR ===");
 
-        System.out.println("1. FCFA -> Euro");
-        System.out.println("2. Euro -> FCFA");
+        do {
 
-        System.out.print("Choisis une option (1 ou 2) : ");
-        choix = scanner.nextInt();
+            System.out.println("\n1. FCFA -> Euro");
+            System.out.println("2. Euro -> FCFA");
 
-        if (choix == 1) {
+            System.out.print("Choisis une option (1 ou 2) : ");
+            choix = scanner.nextInt();
 
-            System.out.print("Entre le montant en FCFA : ");
-            double fcfa = scanner.nextDouble();
+            if (choix == 1) {
 
-            double euro = fcfa / 655.957;
+                System.out.print("Entre le montant en FCFA : ");
+                double fcfa = scanner.nextDouble();
 
-            System.out.println("Resultat : " + euro + " Euro");
+                double euro = fcfa / 655.957;
 
-        } else if (choix == 2) {
+                System.out.println("Résultat : " + euro + " Euro");
 
-            System.out.print("Entre le montant en Euro : ");
-            double euro = scanner.nextDouble();
+            } else if (choix == 2) {
 
-            double fcfa = euro * 655.957;
+                System.out.print("Entre le montant en Euro : ");
+                double euro = scanner.nextDouble();
 
-            System.out.println("Resultat : " + fcfa + " FCFA");
+                double fcfa = euro * 655.957;
 
-        } else {
+                System.out.println("Résultat : " + fcfa + " FCFA");
 
-            System.out.println("Choix invalide !");
-        }
+            } else {
+                System.out.println("Choix invalide !");
+            }
+
+            System.out.print("\nVoulez-vous continuer ? (o/n) : ");
+            continuer = scanner.next().charAt(0);
+
+        } while (continuer == 'o' || continuer == 'O');
 
         scanner.close();
+        System.out.println("Programme terminé.");
     }
 }
