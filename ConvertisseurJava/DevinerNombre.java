@@ -24,5 +24,6 @@ public class DevinerNombre {
         } while (essai != secret);
 
         System.out.println("Bravo ! Trouvé 🎉");
+	scanner.close();
     }
 }
